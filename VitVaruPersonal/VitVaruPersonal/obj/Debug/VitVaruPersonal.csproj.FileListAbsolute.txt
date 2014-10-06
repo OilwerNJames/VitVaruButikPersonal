@@ -1,0 +1,10 @@
+D:\School_Files\Projects\VitVaruPersonal\VitVaruPersonal\bin\Debug\VitVaruPersonal.exe.config
+D:\School_Files\Projects\VitVaruPersonal\VitVaruPersonal\bin\Debug\VitVaruPersonal.exe
+D:\School_Files\Projects\VitVaruPersonal\VitVaruPersonal\bin\Debug\VitVaruPersonal.pdb
+D:\School_Files\Projects\VitVaruPersonal\VitVaruPersonal\obj\Debug\VitVaruPersonal.csprojResolveAssemblyReference.cache
+D:\School_Files\Projects\VitVaruPersonal\VitVaruPersonal\obj\Debug\VitVaruPersonal.MainForm.resources
+D:\School_Files\Projects\VitVaruPersonal\VitVaruPersonal\obj\Debug\VitVaruPersonal.Properties.Resources.resources
+D:\School_Files\Projects\VitVaruPersonal\VitVaruPersonal\obj\Debug\VitVaruPersonal.csproj.GenerateResource.Cache
+D:\School_Files\Projects\VitVaruPersonal\VitVaruPersonal\obj\Debug\VitVaruPersonal.exe
+D:\School_Files\Projects\VitVaruPersonal\VitVaruPersonal\obj\Debug\VitVaruPersonal.pdb
+D:\School_Files\Projects\VitVaruPersonal\VitVaruPersonal\bin\Debug\MySql.Web.v20.dll

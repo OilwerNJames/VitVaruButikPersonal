@@ -31,6 +31,8 @@
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.grpbox = new System.Windows.Forms.GroupBox();
+            this.txtArtikelnummer = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.btnTarbort = new System.Windows.Forms.Button();
             this.btnLäggtill = new System.Windows.Forms.Button();
             this.rdbLäggtill = new System.Windows.Forms.RadioButton();
@@ -54,8 +56,6 @@
             this.txtPris = new System.Windows.Forms.TextBox();
             this.txtNamn = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtArtikelnummer = new System.Windows.Forms.TextBox();
             this.grpbox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -109,6 +109,22 @@
             this.grpbox.TabStop = false;
             this.grpbox.Text = "Results";
             // 
+            // txtArtikelnummer
+            // 
+            this.txtArtikelnummer.Location = new System.Drawing.Point(119, 288);
+            this.txtArtikelnummer.Name = "txtArtikelnummer";
+            this.txtArtikelnummer.Size = new System.Drawing.Size(144, 20);
+            this.txtArtikelnummer.TabIndex = 19;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(40, 289);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(73, 13);
+            this.label10.TabIndex = 18;
+            this.label10.Text = "Artikelnummer";
+            // 
             // btnTarbort
             // 
             this.btnTarbort.Location = new System.Drawing.Point(297, 191);
@@ -126,6 +142,7 @@
             this.btnLäggtill.TabIndex = 16;
             this.btnLäggtill.Text = "Lägg Till/ Uppdatera Vara";
             this.btnLäggtill.UseVisualStyleBackColor = true;
+            this.btnLäggtill.Click += new System.EventHandler(this.btnLäggtill_Click);
             // 
             // rdbLäggtill
             // 
@@ -304,22 +321,6 @@
             this.label9.Size = new System.Drawing.Size(97, 13);
             this.label9.TabIndex = 3;
             this.label9.Text = "Sök Artikellnummer";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(40, 289);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(73, 13);
-            this.label10.TabIndex = 18;
-            this.label10.Text = "Artikelnummer";
-            // 
-            // txtArtikelnummer
-            // 
-            this.txtArtikelnummer.Location = new System.Drawing.Point(119, 288);
-            this.txtArtikelnummer.Name = "txtArtikelnummer";
-            this.txtArtikelnummer.Size = new System.Drawing.Size(144, 20);
-            this.txtArtikelnummer.TabIndex = 19;
             // 
             // MainForm
             // 

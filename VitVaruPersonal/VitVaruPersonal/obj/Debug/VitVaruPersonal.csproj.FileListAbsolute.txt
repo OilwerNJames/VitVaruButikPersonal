@@ -8,3 +8,13 @@ D:\School_Files\Projects\VitVaruPersonal\VitVaruPersonal\obj\Debug\VitVaruPerson
 D:\School_Files\Projects\VitVaruPersonal\VitVaruPersonal\obj\Debug\VitVaruPersonal.exe
 D:\School_Files\Projects\VitVaruPersonal\VitVaruPersonal\obj\Debug\VitVaruPersonal.pdb
 D:\School_Files\Projects\VitVaruPersonal\VitVaruPersonal\bin\Debug\MySql.Web.v20.dll
+\\psf\Home\Desktop\Förvaring\Github\VitvaruButikpersonal\VitVaruPersonal\VitVaruPersonal\bin\Debug\VitVaruPersonal.exe.config
+\\psf\Home\Desktop\Förvaring\Github\VitvaruButikpersonal\VitVaruPersonal\VitVaruPersonal\obj\Debug\VitVaruPersonal.exe
+\\psf\Home\Desktop\Förvaring\Github\VitvaruButikpersonal\VitVaruPersonal\VitVaruPersonal\obj\Debug\VitVaruPersonal.pdb
+\\psf\Home\Desktop\Förvaring\Github\VitvaruButikpersonal\VitVaruPersonal\VitVaruPersonal\bin\Debug\VitVaruPersonal.exe
+\\psf\Home\Desktop\Förvaring\Github\VitvaruButikpersonal\VitVaruPersonal\VitVaruPersonal\bin\Debug\VitVaruPersonal.pdb
+\\psf\Home\Desktop\Förvaring\Github\VitvaruButikpersonal\VitVaruPersonal\VitVaruPersonal\bin\Debug\MySql.Web.v20.dll
+\\psf\Home\Desktop\Förvaring\Github\VitvaruButikpersonal\VitVaruPersonal\VitVaruPersonal\obj\Debug\VitVaruPersonal.csprojResolveAssemblyReference.cache
+\\psf\Home\Desktop\Förvaring\Github\VitvaruButikpersonal\VitVaruPersonal\VitVaruPersonal\obj\Debug\VitVaruPersonal.MainForm.resources
+\\psf\Home\Desktop\Förvaring\Github\VitvaruButikpersonal\VitVaruPersonal\VitVaruPersonal\obj\Debug\VitVaruPersonal.Properties.Resources.resources
+\\psf\Home\Desktop\Förvaring\Github\VitvaruButikpersonal\VitVaruPersonal\VitVaruPersonal\obj\Debug\VitVaruPersonal.csproj.GenerateResource.Cache

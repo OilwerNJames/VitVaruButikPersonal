@@ -119,5 +119,20 @@ namespace VitVaruPersonal
             updateGUIuppdateraraiobuttonenabled();
         }
 
+        private void btnLäggtill_Click(object sender, EventArgs e)
+        {
+            connectToMySql();
+
+            string sql;
+            MySqlCommand cmd;
+
+            sql = "UPDATE table1 SET namn = " + txtNamn.Text + " WHERE artikelnummer= dd-1231;";
+//            sql = " ALTER TABLE produkt SET namn =\"" + txtNamn.Text + "\", pris =\"" + txtPris.Text + "\", tillverkare =\"" + txtTillverkare.Text + " WHERE artikelnummer =\"" + txtArtikelnummer.Text + "\";";
+            
+            cmd = new MySqlCommand(sql, dbConn);
+            cmd.ExecuteNonQuery();
+            cmd.Connection.Close();
+        }
+
     }
 }

@@ -121,17 +121,25 @@ namespace VitVaruPersonal
 
         private void btnLäggtill_Click(object sender, EventArgs e)
         {
-            connectToMySql();
+            if(rdbUppdatera.Checked)
+            {
+                connectToMySql();
 
-            string sql;
-            MySqlCommand cmd;
+                string sql;
+                MySqlCommand cmd;
 
-            sql = "UPDATE produkt SET namn = '" + txtNamn.Text + "' WHERE artikelnummer = '" + txtArtikelnummer.Text + "'";
-//            sql = " ALTER TABLE produkt SET namn =\"" + txtNamn.Text + "\", pris =\"" + txtPris.Text + "\", tillverkare =\"" + txtTillverkare.Text + " WHERE artikelnummer =\"" + txtArtikelnummer.Text + "\";";
-            
-            cmd = new MySqlCommand(sql, dbConn);
-            cmd.ExecuteNonQuery();
-            cmd.Connection.Close();
+                sql = "UPDATE produkt SET namn = '" + txtNamn.Text + "', pris = '" + txtPris.Text + "', tillverkare = '" + txtTillverkare.Text + "', modell = '" + txtModel.Text + "', produktbeskrivning = '" + txtProduktBeskrivning.Text + "', inköpspris = '" + txtInköpsris.Text + "', varugrupp = '" + txtVarugrupp.Text + "', energiklass = '" + txtEnergiklass.Text + "', lagersaldo = '" + txtLagersaldo.Text + "' WHERE artikelnummer = '" + txtArtikelnummer.Text + "'";
+
+                cmd = new MySqlCommand(sql, dbConn);
+                cmd.ExecuteNonQuery();
+                cmd.Connection.Close();
+
+                MessageBox.Show("Artikel uppdaterades", "Success", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            }
+            else
+            {
+
+            }
         }
 
     }

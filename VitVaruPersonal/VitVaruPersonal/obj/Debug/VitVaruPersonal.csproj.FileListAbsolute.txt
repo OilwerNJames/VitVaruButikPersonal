@@ -18,3 +18,13 @@ D:\School_Files\Projects\VitVaruPersonal\VitVaruPersonal\bin\Debug\MySql.Web.v20
 \\psf\Home\Desktop\Förvaring\Github\VitvaruButikpersonal\VitVaruPersonal\VitVaruPersonal\obj\Debug\VitVaruPersonal.MainForm.resources
 \\psf\Home\Desktop\Förvaring\Github\VitvaruButikpersonal\VitVaruPersonal\VitVaruPersonal\obj\Debug\VitVaruPersonal.Properties.Resources.resources
 \\psf\Home\Desktop\Förvaring\Github\VitvaruButikpersonal\VitVaruPersonal\VitVaruPersonal\obj\Debug\VitVaruPersonal.csproj.GenerateResource.Cache
+C:\Users\James\Documents\GitHub\VitvaruButikpersonal\VitVaruPersonal\VitVaruPersonal\bin\Debug\VitVaruPersonal.exe.config
+C:\Users\James\Documents\GitHub\VitvaruButikpersonal\VitVaruPersonal\VitVaruPersonal\obj\Debug\VitVaruPersonal.exe
+C:\Users\James\Documents\GitHub\VitvaruButikpersonal\VitVaruPersonal\VitVaruPersonal\obj\Debug\VitVaruPersonal.pdb
+C:\Users\James\Documents\GitHub\VitvaruButikpersonal\VitVaruPersonal\VitVaruPersonal\bin\Debug\VitVaruPersonal.exe
+C:\Users\James\Documents\GitHub\VitvaruButikpersonal\VitVaruPersonal\VitVaruPersonal\bin\Debug\VitVaruPersonal.pdb
+C:\Users\James\Documents\GitHub\VitvaruButikpersonal\VitVaruPersonal\VitVaruPersonal\bin\Debug\MySql.Web.v20.dll
+C:\Users\James\Documents\GitHub\VitvaruButikpersonal\VitVaruPersonal\VitVaruPersonal\obj\Debug\VitVaruPersonal.csprojResolveAssemblyReference.cache
+C:\Users\James\Documents\GitHub\VitvaruButikpersonal\VitVaruPersonal\VitVaruPersonal\obj\Debug\VitVaruPersonal.MainForm.resources
+C:\Users\James\Documents\GitHub\VitvaruButikpersonal\VitVaruPersonal\VitVaruPersonal\obj\Debug\VitVaruPersonal.Properties.Resources.resources
+C:\Users\James\Documents\GitHub\VitvaruButikpersonal\VitVaruPersonal\VitVaruPersonal\obj\Debug\VitVaruPersonal.csproj.GenerateResource.Cache

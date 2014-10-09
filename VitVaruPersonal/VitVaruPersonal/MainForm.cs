@@ -22,7 +22,19 @@ namespace VitVaruPersonal
 
         MySqlConnection dbConn;
         
-        
+        private void Cleartext()
+        {
+            txtNamn.Clear();
+            txtPris.Clear();
+            txtTillverkare.Clear();
+            txtModel.Clear();
+            txtProduktBeskrivning.Clear();
+            txtInköpsris.Clear();
+            txtVarugrupp.Clear();
+            txtEnergiklass.Clear();
+            txtLagersaldo.Clear();
+            txtArtikelnummer.Clear();
+        }
 
         public void connectToMySql()
         {
@@ -99,16 +111,7 @@ namespace VitVaruPersonal
 
         private void rdbLäggtill_CheckedChanged(object sender, EventArgs e)
         {
-            txtNamn.Clear();
-            txtPris.Clear();
-            txtTillverkare.Clear();
-            txtModel.Clear();
-            txtProduktBeskrivning.Clear();
-            txtInköpsris.Clear();
-            txtVarugrupp.Clear();
-            txtEnergiklass.Clear();
-            txtLagersaldo.Clear();
-            txtArtikelnummer.Clear();
+            Cleartext();
 
             txtArtikelnummer.ReadOnly = false;
             txtSearch.Clear();
@@ -123,22 +126,46 @@ namespace VitVaruPersonal
         {
             if(rdbUppdatera.Checked)
             {
-                connectToMySql();
+                if(txtNamn.Text != string.Empty
+                    && txtPris.Text != string.Empty
+                    && txtTillverkare.Text != string.Empty
+                    && txtModel.Text != string.Empty
+                    && txtProduktBeskrivning.Text != string.Empty
+                    && txtInköpsris.Text != string.Empty
+                    && txtVarugrupp.Text != string.Empty
+                    && txtEnergiklass.Text != string.Empty
+                    && txtLagersaldo.Text != string.Empty
+                    && txtArtikelnummer.Text != string.Empty)
+                {
+                    connectToMySql();
 
-                string sql;
-                MySqlCommand cmd;
+                    string sql;
+                    MySqlCommand cmd;
 
-                sql = "UPDATE produkt SET namn = '" + txtNamn.Text + "', pris = '" + txtPris.Text + "', tillverkare = '" + txtTillverkare.Text + "', modell = '" + txtModel.Text + "', produktbeskrivning = '" + txtProduktBeskrivning.Text + "', inköpspris = '" + txtInköpsris.Text + "', varugrupp = '" + txtVarugrupp.Text + "', energiklass = '" + txtEnergiklass.Text + "', lagersaldo = '" + txtLagersaldo.Text + "' WHERE artikelnummer = '" + txtArtikelnummer.Text + "'";
+                    sql = "UPDATE produkt SET namn = '" + txtNamn.Text + "', pris = '" + txtPris.Text + "', tillverkare = '" + txtTillverkare.Text + "', modell = '" + txtModel.Text + "', produktbeskrivning = '" + txtProduktBeskrivning.Text + "', inköpspris = '" + txtInköpsris.Text + "', varugrupp = '" + txtVarugrupp.Text + "', energiklass = '" + txtEnergiklass.Text + "', lagersaldo = '" + txtLagersaldo.Text + "' WHERE artikelnummer = '" + txtArtikelnummer.Text + "'";
 
-                cmd = new MySqlCommand(sql, dbConn);
-                cmd.ExecuteNonQuery();
-                cmd.Connection.Close();
+                    cmd = new MySqlCommand(sql, dbConn);
+                    cmd.ExecuteNonQuery();
+                    cmd.Connection.Close();
 
-                MessageBox.Show("Artikel uppdaterades", "Success", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    MessageBox.Show("Artikel uppdaterades", "Success", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    Cleartext();
+                }
+                else
+                {
+                    MessageBox.Show("All fields must have a value");
+                }
+
+             
             }
             else
             {
+                //connectToMySql();
 
+                //    string sql;
+                //    MySqlCommand cmd;
+
+                //    sql =
             }
         }
 

@@ -99,6 +99,134 @@ namespace VitVaruPersonal
 
         private void rdbLäggtill_CheckedChanged(object sender, EventArgs e)
         {
+            btnLäggtill.Text = "Lägg till produkt";
+            ClearAll();
+
+            txtArtikelnummer.ReadOnly = false;
+        }
+
+        private void rdbUppdatera_CheckedChanged(object sender, EventArgs e)
+        {
+            btnLäggtill.Text = "Uppdatera produkt";
+            updateGUIuppdateraraiobuttonenabled();
+        }
+
+        private void btnLäggtill_Click(object sender, EventArgs e)
+        {
+            if (rdbUppdatera.Checked)
+            {
+                if (
+                    (txtLagersaldo.Text != string.Empty)
+                    && (txtPris.Text != string.Empty)
+                     && (txtNamn.Text != string.Empty)
+                     && (txtModel.Text != string.Empty)
+                     && (txtTillverkare.Text != string.Empty)
+                     && (txtProduktBeskrivning.Text != string.Empty)
+                     && (txtInköpsris.Text != string.Empty)
+                     && (txtArtikelnummer.Text != string.Empty)
+                     && (txtEnergiklass.Text != string.Empty)
+                     && (txtVarugrupp.Text != string.Empty))
+                {
+
+
+
+                    connectToMySql();
+
+
+                    string sql;
+                    MySqlCommand cmd;
+
+                    sql = "UPDATE produkt SET namn = '" + txtNamn.Text + "', pris = '" + txtPris.Text + "', tillverkare = '" + txtTillverkare.Text + "', modell = '" + txtModel.Text + "', energiklass = '" + txtEnergiklass.Text + "', produktbeskrivning = '" + txtProduktBeskrivning.Text + "', inköpspris = '" + txtInköpsris.Text + "', lagersaldo = '" + txtLagersaldo.Text + "' WHERE artikelnummer = '" + txtArtikelnummer.Text + "'";
+
+                    cmd = new MySqlCommand(sql, dbConn);
+                    cmd.ExecuteNonQuery();
+                    cmd.Connection.Close();
+
+                    ClearAll();
+
+                }
+                else
+                {
+                    MessageBox.Show("ERR");
+                }
+            }
+            else // Uppdatera
+            {
+                if (
+                    (txtLagersaldo.Text != string.Empty)
+                    && (txtPris.Text != string.Empty)
+                     && (txtNamn.Text != string.Empty)
+                     && (txtModel.Text != string.Empty)
+                     && (txtTillverkare.Text != string.Empty)
+                     && (txtProduktBeskrivning.Text != string.Empty)
+                     && (txtInköpsris.Text != string.Empty)
+                     && (txtArtikelnummer.Text != string.Empty)
+                     && (txtEnergiklass.Text != string.Empty)
+                     && (txtVarugrupp.Text != string.Empty))
+                {
+
+
+
+                    connectToMySql();
+
+
+                    string sql;
+                    MySqlCommand cmd;
+
+                    sql = "insert into produkt (artikelnummer, namn, pris, tillverkare, modell, produktbeskrivning, inköpspris, energiklass, varugrupp, lagersaldo) values( '" +
+txtArtikelnummer.Text + "', '" + txtNamn.Text + "', '" + txtPris.Text + "', '" + txtTillverkare.Text + "', '" + txtModel.Text + "', '" + txtProduktBeskrivning.Text + "', '" + txtInköpsris.Text + "', '" + txtEnergiklass.Text + "', '" + txtVarugrupp.Text + "', '" + txtLagersaldo.Text + "' " + ")";
+                   // sql = "UPDATE produkt SET namn = '" + txtNamn.Text + "', pris = '" + txtPris.Text + "', tillverkare = '" + txtTillverkare.Text + "', modell = '" + txtModel.Text + "', energiklass = '" + txtEnergiklass.Text + "', produktbeskrivning = '" + txtProduktBeskrivning.Text + "', inköpspris = '" + txtInköpsris.Text + "', lagersaldo = '" + txtLagersaldo.Text + "' WHERE artikelnummer = '" + txtArtikelnummer.Text + "'";
+
+                    cmd = new MySqlCommand(sql, dbConn);
+                    cmd.ExecuteNonQuery();
+                    cmd.Connection.Close();
+
+                    ClearAll();
+
+                }
+                else
+                {
+                    MessageBox.Show("ERR");
+                }
+            }
+        }
+
+        private void btnTarbort_Click(object sender, EventArgs e)
+        {
+
+            if (
+                   (txtLagersaldo.Text != string.Empty)
+                   && (txtPris.Text != string.Empty)
+                    && (txtNamn.Text != string.Empty)
+                    && (txtModel.Text != string.Empty)
+                    && (txtTillverkare.Text != string.Empty)
+                    && (txtProduktBeskrivning.Text != string.Empty)
+                    && (txtInköpsris.Text != string.Empty)
+                    && (txtArtikelnummer.Text != string.Empty)
+                    && (txtEnergiklass.Text != string.Empty)
+                    && (txtVarugrupp.Text != string.Empty))
+            {
+                connectToMySql();
+
+
+                string sql;
+                MySqlCommand cmd;
+
+                sql = "delete from produkt where artikelnummer = '" + txtArtikelnummer.Text + "'";
+               
+                cmd = new MySqlCommand(sql, dbConn);
+                cmd.ExecuteNonQuery();
+                cmd.Connection.Close();
+               
+                ClearAll();
+                
+            }
+
+        }
+
+        private void ClearAll()
+        {
+
             txtNamn.Clear();
             txtPris.Clear();
             txtTillverkare.Clear();
@@ -109,28 +237,7 @@ namespace VitVaruPersonal
             txtEnergiklass.Clear();
             txtLagersaldo.Clear();
             txtArtikelnummer.Clear();
-
-            txtArtikelnummer.ReadOnly = false;
             txtSearch.Clear();
-        }
-
-        private void rdbUppdatera_CheckedChanged(object sender, EventArgs e)
-        {
-            updateGUIuppdateraraiobuttonenabled();
-        }
-
-        private void btnLäggtill_Click(object sender, EventArgs e)
-        {
-            connectToMySql();
-
-            string sql;
-            MySqlCommand cmd;
-
-            sql = "UPDATE produkt SET namn = '" + txtNamn.Text + "', pris = '" + txtPris.Text + "', tillverkare = '" + txtTillverkare.Text + "', modell = '" + txtModel.Text + "', energiklass = '" + txtEnergiklass.Text + "', produktbeskrivning = '" + txtProduktBeskrivning.Text + "', inköpspris = '" + txtInköpsris.Text + "', lagersaldo = '" + txtLagersaldo.Text + "' WHERE artikelnummer = '" + txtArtikelnummer.Text + "'";
-            
-            cmd = new MySqlCommand(sql, dbConn);
-            cmd.ExecuteNonQuery();
-            cmd.Connection.Close();
         }
 
     }   

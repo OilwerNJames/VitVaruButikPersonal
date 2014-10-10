@@ -133,6 +133,7 @@
             this.btnTarbort.TabIndex = 17;
             this.btnTarbort.Text = "Tar Bort Vara";
             this.btnTarbort.UseVisualStyleBackColor = true;
+            this.btnTarbort.Click += new System.EventHandler(this.btnTarbort_Click);
             // 
             // btnLäggtill
             // 
@@ -140,7 +141,7 @@
             this.btnLäggtill.Name = "btnLäggtill";
             this.btnLäggtill.Size = new System.Drawing.Size(75, 70);
             this.btnLäggtill.TabIndex = 16;
-            this.btnLäggtill.Text = "Lägg Till/ Uppdatera Vara";
+            this.btnLäggtill.Text = "Lägg till produkt";
             this.btnLäggtill.UseVisualStyleBackColor = true;
             this.btnLäggtill.Click += new System.EventHandler(this.btnLäggtill_Click);
             // 
@@ -332,7 +333,7 @@
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtSearch);
             this.Name = "MainForm";
-            this.Text = "Form1";
+            this.Text = "VitvaruPersonal";
             this.grpbox.ResumeLayout(false);
             this.grpbox.PerformLayout();
             this.ResumeLayout(false);

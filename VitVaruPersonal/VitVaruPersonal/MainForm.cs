@@ -126,13 +126,12 @@ namespace VitVaruPersonal
             string sql;
             MySqlCommand cmd;
 
-            sql = "UPDATE produkt SET namn = '" + txtNamn.Text + "' WHERE artikelnummer = '" + txtArtikelnummer.Text + "'";
-//            sql = " ALTER TABLE produkt SET namn =\"" + txtNamn.Text + "\", pris =\"" + txtPris.Text + "\", tillverkare =\"" + txtTillverkare.Text + " WHERE artikelnummer =\"" + txtArtikelnummer.Text + "\";";
+            sql = "UPDATE produkt SET namn = '" + txtNamn.Text + "', pris = '" + txtPris.Text + "', tillverkare = '" + txtTillverkare.Text + "', modell = '" + txtModel.Text + "', energiklass = '" + txtEnergiklass.Text + "', produktbeskrivning = '" + txtProduktBeskrivning.Text + "', inköpspris = '" + txtInköpsris.Text + "', lagersaldo = '" + txtLagersaldo.Text + "' WHERE artikelnummer = '" + txtArtikelnummer.Text + "'";
             
             cmd = new MySqlCommand(sql, dbConn);
             cmd.ExecuteNonQuery();
             cmd.Connection.Close();
         }
 
-    }
+    }   
 }
